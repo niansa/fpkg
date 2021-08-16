@@ -6,6 +6,7 @@
 #include "add.h"
 #include "ver.h"
 #include "sync.h"
+#include "upgrade.h"
 
 
 int main(int argc, char* argv[]) {
@@ -24,5 +25,8 @@ int main(int argc, char* argv[]) {
 
     else if ((!strcmp(argv[1], "sync") && argc == 2) || (!strcmp(argv[1], "-s") && argc == 2))
         return sync();
+
+    else if ((!strcmp(argv[1], "upgrade") && argc == 2) || (!strcmp(argv[1], "-u") && argc == 2))
+        return upgrade();
 
 }

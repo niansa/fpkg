@@ -10,6 +10,7 @@ int help() {
     printf("fpkg add | -i: Installs a package\n");
     printf("fpkg ver | -v: Returns the current version of Patter\n");
     printf("fpkg sync | -s: Returns the current version of Patter\n");
+    printf("fpkg upgrade | -u: Returns the current version of Patter\n");
     
 
     return 0;

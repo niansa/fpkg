@@ -3,9 +3,7 @@
 
 #include "colors.h"
 
-int sync() {
-
-
-    printf(RED "PKG_SYNC\n" RESET);
+int upgrade() {
+    printf(RED "PKG_UPGRADE\n" RESET);
     return 0;
 }
