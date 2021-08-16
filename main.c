@@ -3,6 +3,7 @@
 
 #include "help.h"
 #include "colors.h"
+#include "add.h"
 
 
 int main(int argc, char* argv[]) {
@@ -12,7 +13,10 @@ int main(int argc, char* argv[]) {
 
     else if ((!strcmp(argv[1], "help") && argc == 2) ||
         (!strcmp(argv[1], "help") && argc == 2))
+        return help();
 
+    else if ((!strcmp(argv[1], "add") && argc == 2) ||
+        (!strcmp(argv[1], "add") && argc == 2))
+        return add();
 
-    return help() + 1;
 }
