@@ -18,7 +18,7 @@ clean:
 
 pkg: build
 	mkdir build
-	cp LICENSE Makefile make.sh README *.c *.h fpkg build/
+	cp LICENSE Makefile make.sh README.md *.c *.h fpkg build/
 	tar cfzv fpkg-$(VERSION).tar.gz build/
 
 
