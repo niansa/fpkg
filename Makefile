@@ -2,6 +2,7 @@ VERSION = 1.0-0.1
 
 
 build:
+	mkdir build
 	gcc main.c help.h colors.h add.h ver.h sync.h upgrade.h -o fpkg
 
 install:
@@ -15,6 +16,7 @@ remove:
 
 clean:
 	rm fpkg 
+	rm -r build
 
 pkg: build
 	mkdir build
