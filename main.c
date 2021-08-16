@@ -5,6 +5,7 @@
 #include "colors.h"
 #include "add.h"
 #include "ver.h"
+#include "sync.h"
 
 
 int main(int argc, char* argv[]) {
@@ -18,7 +19,10 @@ int main(int argc, char* argv[]) {
     else if ((!strcmp(argv[1], "add") && argc == 2) || (!strcmp(argv[1], "-i") && argc == 2))
         return add();
 
-    else if ((!strcmp(argv[1], "ver") && argc == 2) || (!strcmp(argv[1], "-ver") && argc == 2))
+    else if ((!strcmp(argv[1], "ver") && argc == 2) || (!strcmp(argv[1], "-v") && argc == 2))
         return version();
+
+    else if ((!strcmp(argv[1], "sync") && argc == 2) || (!strcmp(argv[1], "-s") && argc == 2))
+        return sync();
 
 }

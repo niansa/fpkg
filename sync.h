@@ -3,7 +3,7 @@
 
 #include "colors.h"
 
-int version() {
-    printf(RED "fpkg Version: " RESET "1.0-0.1\n");
+int sync() {
+    printf(RED "PKG_SYNC\n" RESET);
     return 0;
 }
