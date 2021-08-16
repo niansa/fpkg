@@ -4,6 +4,7 @@
 #include "help.h"
 #include "colors.h"
 #include "add.h"
+#include "ver.h"
 
 
 int main(int argc, char* argv[]) {
@@ -11,12 +12,13 @@ int main(int argc, char* argv[]) {
     if (argc == 1)
         printf(RED "E: " RESET "No Argument was given. Run fpkg help for Commands \n");
 
-    else if ((!strcmp(argv[1], "help") && argc == 2) ||
-        (!strcmp(argv[1], "help") && argc == 2))
+    else if ((!strcmp(argv[1], "help") && argc == 2) || (!strcmp(argv[1], "-h") && argc == 2))
         return help();
 
-    else if ((!strcmp(argv[1], "add") && argc == 2) ||
-        (!strcmp(argv[1], "add") && argc == 2))
+    else if ((!strcmp(argv[1], "add") && argc == 2) || (!strcmp(argv[1], "-i") && argc == 2))
         return add();
+
+    else if ((!strcmp(argv[1], "ver") && argc == 2) || (!strcmp(argv[1], "-ver") && argc == 2))
+        return version();
 
 }
